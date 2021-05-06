@@ -1,8 +1,10 @@
 import random
-def deterministicNumber():
-    '''
+
+
+def deterministic_number():
+    """
     Deterministically generates and returns an even number between 9 and 21
-    '''
+    """
     random.seed(0)
     x = random.randrange(9, 21)
     if x % 2 == 0:
@@ -11,4 +13,4 @@ def deterministicNumber():
         return x + 1
 
 
-print(deterministicNumber())
+print(deterministic_number())
