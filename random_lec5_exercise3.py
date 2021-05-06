@@ -10,4 +10,5 @@ def deterministicNumber():
     else:
         return x + 1
 
+
 print(deterministicNumber())
