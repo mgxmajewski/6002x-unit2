@@ -13,4 +13,20 @@ def deterministic_number():
         return x + 1
 
 
-print(deterministic_number())
+def stochastic_number():
+    """
+    Stochastically generates and returns a uniformly distributed even number between 9 and 21
+    """
+    # Your code here
+    random.seed()
+    x = random.randrange(9, 21)
+    if x % 2 == 0:
+        return x
+    else:
+        return x + 1
+
+
+print('deterministic: ' + str(deterministic_number()))
+print('deterministic: ' + str(stochastic_number()))
+
+
